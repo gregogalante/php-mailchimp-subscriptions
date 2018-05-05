@@ -20,10 +20,7 @@ if ($mailchimp->success()) {
 } else {
   $response = array(
     'result' => false,
-    'error' => $mailchimp->getLastError(),
-    'name' => $_POST['name'],
-    'surname' => $_POST['surname'],
-    'email' => $_POST['email']
+    'error' => $mailchimp->getLastError()
   );
 }
 
